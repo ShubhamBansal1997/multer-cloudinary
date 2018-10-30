@@ -4,11 +4,9 @@ A simple storage engine which stores the files directly on cloudinary
     var multerCloudinary = require('multer-cloudinary');
     var Cloudinary = require('cloudinary');
     Cloudinary.config({
-      {
         cloud_name: '-----',
         api_key: '------',
         api_secret: '-----',
-      }
     });
     var cloudinaryStorage = multerCloudinary({cloudinary: Cloudinary});
 
